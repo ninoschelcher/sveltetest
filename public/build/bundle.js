@@ -805,7 +805,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (51:26) 
+    // (52:26) 
     function create_if_block_1(ctx) {
     	let p;
     	let t0;
@@ -816,7 +816,8 @@ var app = (function () {
     			p = element("p");
     			t0 = text(/*itemLength*/ ctx[0]);
     			t1 = text(" Tasks Left");
-    			add_location(p, file$1, 51, 2, 1204);
+    			attr_dev(p, "class", "svelte-54p8w8");
+    			add_location(p, file$1, 52, 2, 1220);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -835,14 +836,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(51:26) ",
+    		source: "(52:26) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (49:0) {#if itemLength == undefined || itemLength == 0}
+    // (50:0) {#if itemLength == undefined || itemLength == 0}
     function create_if_block(ctx) {
     	let p;
 
@@ -850,7 +851,8 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "No Tasks Left";
-    			add_location(p, file$1, 49, 2, 1152);
+    			attr_dev(p, "class", "svelte-54p8w8");
+    			add_location(p, file$1, 50, 2, 1168);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -865,14 +867,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(49:0) {#if itemLength == undefined || itemLength == 0}",
+    		source: "(50:0) {#if itemLength == undefined || itemLength == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (55:2) {#each $todos as todo (todo.id)}
+    // (56:2) {#each $todos as todo (todo.id)}
     function create_each_block(key_1, ctx) {
     	let div;
     	let li;
@@ -922,21 +924,21 @@ var app = (function () {
     			t4 = space();
     			attr_dev(input, "id", input_id_value = /*todo*/ ctx[8].id);
     			attr_dev(input, "type", "checkbox");
-    			attr_dev(input, "class", "svelte-hma9i1");
-    			add_location(input, file$1, 60, 8, 1464);
+    			attr_dev(input, "class", "svelte-54p8w8");
+    			add_location(input, file$1, 61, 8, 1480);
     			attr_dev(label, "for", label_for_value = /*todo*/ ctx[8].id);
-    			attr_dev(label, "class", "tick");
-    			add_location(label, file$1, 65, 8, 1591);
-    			attr_dev(p, "class", "svelte-hma9i1");
-    			add_location(p, file$1, 66, 8, 1637);
-    			attr_dev(li, "class", li_class_value = "todo-item " + (/*todo*/ ctx[8].checked ? "done" : "") + " svelte-hma9i1");
-    			add_location(li, file$1, 56, 6, 1320);
-    			attr_dev(i, "class", "gg-trash svelte-hma9i1");
-    			add_location(i, file$1, 72, 8, 1809);
-    			attr_dev(button, "class", button_class_value = "delete-todo " + (/*todo*/ ctx[8].checked ? "checked" : "") + " svelte-hma9i1");
-    			add_location(button, file$1, 68, 6, 1676);
-    			attr_dev(div, "class", "svelte-hma9i1");
-    			add_location(div, file$1, 55, 4, 1307);
+    			attr_dev(label, "class", "tick svelte-54p8w8");
+    			add_location(label, file$1, 66, 8, 1607);
+    			attr_dev(p, "class", "svelte-54p8w8");
+    			add_location(p, file$1, 67, 8, 1653);
+    			attr_dev(li, "class", li_class_value = "todo-item " + (/*todo*/ ctx[8].checked ? "done" : "") + " svelte-54p8w8");
+    			add_location(li, file$1, 57, 6, 1336);
+    			attr_dev(i, "class", "gg-trash svelte-54p8w8");
+    			add_location(i, file$1, 73, 8, 1825);
+    			attr_dev(button, "class", button_class_value = "delete-todo " + (/*todo*/ ctx[8].checked ? "checked" : "") + " svelte-54p8w8");
+    			add_location(button, file$1, 69, 6, 1692);
+    			attr_dev(div, "class", "svelte-54p8w8");
+    			add_location(div, file$1, 56, 4, 1323);
     			this.first = div;
     		},
     		m: function mount(target, anchor) {
@@ -976,11 +978,11 @@ var app = (function () {
 
     			if ((!current || dirty & /*$todos*/ 2) && t2_value !== (t2_value = /*todo*/ ctx[8].text + "")) set_data_dev(t2, t2_value);
 
-    			if (!current || dirty & /*$todos*/ 2 && li_class_value !== (li_class_value = "todo-item " + (/*todo*/ ctx[8].checked ? "done" : "") + " svelte-hma9i1")) {
+    			if (!current || dirty & /*$todos*/ 2 && li_class_value !== (li_class_value = "todo-item " + (/*todo*/ ctx[8].checked ? "done" : "") + " svelte-54p8w8")) {
     				attr_dev(li, "class", li_class_value);
     			}
 
-    			if (!current || dirty & /*$todos*/ 2 && button_class_value !== (button_class_value = "delete-todo " + (/*todo*/ ctx[8].checked ? "checked" : "") + " svelte-hma9i1")) {
+    			if (!current || dirty & /*$todos*/ 2 && button_class_value !== (button_class_value = "delete-todo " + (/*todo*/ ctx[8].checked ? "checked" : "") + " svelte-54p8w8")) {
     				attr_dev(button, "class", button_class_value);
     			}
     		},
@@ -1011,7 +1013,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(55:2) {#each $todos as todo (todo.id)}",
+    		source: "(56:2) {#each $todos as todo (todo.id)}",
     		ctx
     	});
 
@@ -1022,9 +1024,11 @@ var app = (function () {
     	let form;
     	let input;
     	let t0;
-    	let h2;
+    	let button;
     	let t2;
-    	let t3;
+    	let h2;
+    	let t4;
+    	let t5;
     	let ul;
     	let each_blocks = [];
     	let each_1_lookup = new Map();
@@ -1055,11 +1059,14 @@ var app = (function () {
     			form = element("form");
     			input = element("input");
     			t0 = space();
+    			button = element("button");
+    			button.textContent = "Add +";
+    			t2 = space();
     			h2 = element("h2");
     			h2.textContent = "Your tasks";
-    			t2 = space();
+    			t4 = space();
     			if (if_block) if_block.c();
-    			t3 = space();
+    			t5 = space();
     			ul = element("ul");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -1067,15 +1074,19 @@ var app = (function () {
     			}
 
     			attr_dev(input, "id", "task");
-    			attr_dev(input, "class", "js-todo-input");
+    			attr_dev(input, "class", "js-todo-input svelte-54p8w8");
     			attr_dev(input, "type", "text");
     			attr_dev(input, "aria-label", "Enter a new todo item");
-    			attr_dev(input, "placeholder", "E.g. Build a web app");
+    			attr_dev(input, "placeholder", "Task Name");
     			add_location(input, file$1, 39, 2, 917);
+    			attr_dev(button, "class", "svelte-54p8w8");
+    			add_location(button, file$1, 46, 2, 1061);
+    			attr_dev(form, "class", "svelte-54p8w8");
     			add_location(form, file$1, 38, 0, 872);
-    			add_location(h2, file$1, 47, 0, 1079);
-    			attr_dev(ul, "class", "todo-list svelte-hma9i1");
-    			add_location(ul, file$1, 53, 0, 1243);
+    			attr_dev(h2, "class", "svelte-54p8w8");
+    			add_location(h2, file$1, 48, 0, 1095);
+    			attr_dev(ul, "class", "todo-list svelte-54p8w8");
+    			add_location(ul, file$1, 54, 0, 1259);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1083,11 +1094,13 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, form, anchor);
     			append_dev(form, input);
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, h2, anchor);
+    			append_dev(form, t0);
+    			append_dev(form, button);
     			insert_dev(target, t2, anchor);
+    			insert_dev(target, h2, anchor);
+    			insert_dev(target, t4, anchor);
     			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, t3, anchor);
+    			insert_dev(target, t5, anchor);
     			insert_dev(target, ul, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -1110,7 +1123,7 @@ var app = (function () {
 
     				if (if_block) {
     					if_block.c();
-    					if_block.m(t3.parentNode, t3);
+    					if_block.m(t5.parentNode, t5);
     				}
     			}
 
@@ -1141,15 +1154,15 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(form);
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(h2);
     			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(h2);
+    			if (detaching) detach_dev(t4);
 
     			if (if_block) {
     				if_block.d(detaching);
     			}
 
-    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(t5);
     			if (detaching) detach_dev(ul);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {

@@ -42,8 +42,9 @@
     class="js-todo-input"
     type="text"
     aria-label="Enter a new todo item"
-    placeholder="E.g. Build a web app"
+    placeholder="Task Name"
   />
+  <button> Add +</button>
 </form>
 <h2>Your tasks</h2>
 {#if itemLength == undefined || itemLength == 0}
@@ -77,6 +78,26 @@
 </ul>
 
 <style>
+  ::placeholder {
+    color: #b2b2b2;
+  }
+  form input[type="text"] {
+    border: none;
+    border-radius: 10px;
+    padding: 0.9em;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    width: 280px;
+  }
+
+  form button {
+    background-color: #fff;
+    font-family: "Inter";
+    border: none;
+    color: #b2b2b2;
+    font-size: 1em;
+    position: relative;
+    left: -70px;
+  }
   ul {
     padding-inline-start: 0;
     margin-block-start: 0;
@@ -84,7 +105,6 @@
 
   ul div {
     display: flex;
-
     margin: 1em 0;
   }
 
@@ -96,7 +116,7 @@
     background-color: #ffffff;
     padding: 0 0 0 1em;
     width: 30%;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     opacity: 100%;
     transition: 300ms all;
@@ -133,7 +153,7 @@
     text-decoration: line-through;
   }
 
-  button {
+  ul button {
     background-color: transparent;
     position: relative;
     border: none;
